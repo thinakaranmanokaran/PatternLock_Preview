@@ -1,110 +1,91 @@
-# React Vite + Tailwind CSS
+# 🔒 Pattern Lock Preview
 
-This is a simple React project using Vite and Tailwind CSS for fast development and styling.
+<p align="center">
+  <img src="./public/favicon512.png" alt="Pattern Lock Preview Logo" width="200" />
+</p>
+
+<p align="center">
+  <b>Interactive Android Pattern Lock Simulator for Web</b>
+</p>
+
+<p align="center">
+  <img src="./public/preview.png" alt="Pattern Lock Preview Screenshot" width="700" />
+</p>
+
+---
+
+## 🌐 Live Demo
+
+👉 [https://thinakaranmanokaran.github.io/PatternLock_Preview/](https://thinakaranmanokaran.github.io/PatternLock_Preview/)
+
+---
+
+## ✨ Features
+
+* 🖱 Works with **mouse** on desktop/laptop
+* 📱 Works with **finger touch** on mobile/tablet
+* ⚡ Smooth animated connections
+* 🎨 Real-time dot highlighting
+* 🔄 Auto reset after pattern draw
+* 🔥 Modern UI with Tailwind CSS
+
+---
+
+## 🛠 Built With
+
+* React (Vite)
+* Tailwind CSS
+* Pointer Events API
+* GitHub Pages
+
+---
 
 ## 🚀 Getting Started
 
-### 1️⃣ Prerequisites
-Make sure you have the following installed:
-- [Node.js](https://nodejs.org/) (LTS recommended)
-- npm (comes with Node.js) or yarn
+### 1️⃣ Clone the repo
 
-### 2️⃣ Create a New Vite Project
-Run the following command to create a new Vite project:
-```sh
-npm create vite@latest my-app --template react
-```
-OR (if using yarn)
-```sh
-yarn create vite@latest my-app --template react
+```bash
+git clone https://github.com/thinakaranmanokaran/PatternLock_Preview.git
+cd PatternLock_Preview
 ```
 
-### 3️⃣ Navigate to Project Folder
-```sh
-cd my-app
-```
+### 2️⃣ Install dependencies
 
-### 4️⃣ Install Dependencies
-```sh
+```bash
 npm install
 ```
-OR
-```sh
-yarn install
-```
 
-### 5️⃣ Install Tailwind CSS
-Run the following command:
-```sh
-npm install -D tailwindcss postcss autoprefixer
-```
+### 3️⃣ Run locally
 
-### 6️⃣ Initialize Tailwind CSS
-```sh
-npx tailwindcss init -p
-```
-This creates `tailwind.config.js` and `postcss.config.js`.
-
-### 7️⃣ Configure Tailwind
-Edit `tailwind.config.js` to enable Tailwind in all files:
-```js
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}"
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-```
-
-### 8️⃣ Add Tailwind to CSS
-Replace the content of `src/index.css` with:
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
-### 9️⃣ Start the Development Server
-```sh
+```bash
 npm run dev
 ```
-OR
-```sh
-yarn dev
-```
-
-## 📁 Project Structure
-```
-my-app/
-│-- src/
-│   ├── components/    # Reusable components
-│   ├── pages/         # Page components
-│   ├── App.jsx        # Main App component
-│   ├── main.jsx       # Entry file
-│-- public/            # Static files
-│-- index.html         # Root HTML file
-│-- package.json       # Project dependencies
-│-- tailwind.config.js # Tailwind configuration
-│-- vite.config.js     # Vite configuration
-```
-
-## ✅ Deployment
-To build your project for production, run:
-```sh
-npm run build
-```
-Then, you can deploy the `dist` folder to any static hosting service like **Vercel**, **Netlify**, or **GitHub Pages**.
-
-## 🎯 Additional Resources
-- [Vite Documentation](https://vitejs.dev/)
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/)
 
 ---
-Happy Coding! 🚀
 
+## 📁 Project Structure
+
+```
+PatternLock_Preview/
+├── public/
+│   ├── preview.png
+│   ├── favicon512.png
+│   └── other favicons...
+├── src/
+│   ├── App.jsx
+│   └── main.jsx
+└── index.html
+```
+
+---
+
+## 👨‍💻 Author
+
+**Thinakaran Manokaran**
+🌐 Portfolio: [https://thinakaran.dev/](https://thinakaran.dev/)
+
+---
+
+## ⭐ Support
+
+If you like this project, please give it a **star** on GitHub 🌟

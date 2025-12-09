@@ -51,7 +51,7 @@ const Home = () => {
 
     const endDraw = () => {
         setIsDrawing(false);
-        setTimeout(clearCanvas, 1500);
+        // setTimeout(clearCanvas, 1500);
     };
 
     const drawLine = (from, to) => {
@@ -121,6 +121,14 @@ const Home = () => {
 `}
                 />))} </div>
             </div>
+            {/* RESET Button */}
+            {pattern.length > 0 && (
+                <div className="text-center">
+                    <button onClick={clearCanvas} className="px-6 py-2 bg-red-500 text-white rounded-full hover:bg-red-600 transition-colors duration-200 cursor-pointer">
+                        Reset Pattern
+                    </button>
+                </div>
+            )}
 
             {/* Pattern Preview */}
             <div className="text-center mt-4">
@@ -131,6 +139,10 @@ const Home = () => {
                     </span>
                 </p>
             </div>
+            <footer className="text-center text-black tracking-tight absolute bottom-4 w-full text-lg ">
+                <span>Developed by </span>
+                <a href="https://thinakaran.dev" target="_blank" rel="noopener noreferrer" className="underline font-medium">Thinakaran Manokaran</a>
+            </footer>
         </div>
     );
 };
