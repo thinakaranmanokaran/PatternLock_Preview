@@ -139,7 +139,7 @@ const Home = () => {
                     </span>
                 </p>
             </div>
-            <footer className="text-center text-black tracking-tight absolute bottom-4 w-full text-lg ">
+            <footer className="text-center text-black tracking-tight md:absolute bottom-4 w-full text-lg ">
                 <span>Developed by </span>
                 <a href="https://thinakaran.dev" target="_blank" rel="noopener noreferrer" className="underline font-medium">Thinakaran Manokaran</a>
             </footer>
