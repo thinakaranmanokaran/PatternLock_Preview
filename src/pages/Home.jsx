@@ -88,13 +88,13 @@ const Home = () => {
     };
 
     return (
-        <div className="font-dmsans py-6">
+        <div className="font-dmsans mt-6 md:py-6">
             <div>
                 <h1 className="font-black text-5xl tracking-[-3px] text-center">
                     Pattern Lock Previewer
                 </h1>
 
-                <p className="font-normal text-lg text-center mt-4 max-w-4xl mx-auto text-black/70 leading-relaxed px-4">
+                <p className="font-normal text-lg text-center mt-4 max-w-4xl mx-auto text-black/70 px-4 leading-tight">
                     Draw Android-style pattern locks using your mouse or finger. This works
                     smoothly on desktop, laptop, tablet and mobile phones.
                 </p>
@@ -131,15 +131,19 @@ const Home = () => {
             )}
 
             {/* Pattern Preview */}
-            <div className="text-center mt-4">
-                <p className="text-lg font-medium tracking-tight">
-                    Your Pattern:
-                    <span className="ml-2 font-medium tracking-tight">
-                        {pattern.length > 0 ? pattern.join(" → ") : "Draw with mouse or finger"}
-                    </span>
-                </p>
-            </div>
-            <footer className="text-center text-black tracking-tight md:absolute bottom-4 w-full text-lg ">
+            {
+                pattern.length > 0 && (
+                    <div className="text-center mt-4">
+                        <p className="text-lg font-medium tracking-tight">
+                            Your Pattern:
+                            <span className="ml-2 font-medium tracking-tight">
+                                {pattern.length > 0 ? pattern.join(" → ") : "Draw with mouse or finger"}
+                            </span>
+                        </p>
+                    </div>
+                )
+            }
+            <footer className="text-center text-black tracking-tight mt-6 md:absolute bottom-4 w-full text-lg ">
                 <span>Developed by </span>
                 <a href="https://thinakaran.dev" target="_blank" rel="noopener noreferrer" className="underline font-medium">Thinakaran Manokaran</a>
             </footer>
